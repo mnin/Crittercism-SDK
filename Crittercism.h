@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "CrittercismJSON/CrittercismCJSONDeserializer.h"
-#import "CrittercismJSON/CrittercismCJSONSerializer.h"
+#import "CrittercismJSON/CrittercismJSONKit.h"
 #import <QuartzCore/QuartzCore.h>
 #import "CrittercismReachability.h"
 #import <CoreData/CoreData.h>

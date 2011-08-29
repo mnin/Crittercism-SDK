@@ -38,6 +38,7 @@
 	NSMutableArray *addedComponents;
 }
 
+@property(retain) NSMutableArray *addedComponents;
 @property(retain) NSDictionary *feedbackDict;
 @property(nonatomic, retain) NSString *feedbackID;
 
