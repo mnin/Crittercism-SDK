@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "CrittercismUIAlertPrompt.h"
 #import "CrittercismDescriptionViewController.h"
-#import "CrittercismJSON/CrittercismCJSONDeserializer.h"
+#import "CrittercismJSON/CrittercismJSONKit.h"
 
 @class Crittercism;
 
