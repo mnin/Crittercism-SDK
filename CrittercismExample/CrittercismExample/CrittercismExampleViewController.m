@@ -22,7 +22,7 @@
     [[Crittercism sharedInstance] addVote];    
 }
 -(IBAction) crashHit:(id) sender {
-    [self throwTestError];
+    [self throwTestError24];
 }
 
 -(IBAction) viewDataHit:(id) sender {
