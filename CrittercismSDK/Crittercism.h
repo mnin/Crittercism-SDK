@@ -83,12 +83,4 @@
 -(void) setNavTitle:(NSString *)_title;
 -(NSString *) getNavTitle;
 -(void) addGradient:(UIButton *) _button;
-
-// Server methods
--(void) appLoadedWithLaunch:(BOOL)isAppLaunch;
--(void) useVote:(NSString *)_feedback_id andThumbsUp:(int)isUp;
--(void) sendToServer:(NSString *)_requestString andURL:(NSString *)_url andDelegate:(NSObject *)_delegate withDetailedDiagnostics:(BOOL)withDetailedDiagnostics;
--(void) addComment:(NSString *)_commentText andFeedbackID:(NSString *)_feedbackID andParentID:(NSString *)_parentID;
--(void) updateData:(BOOL)isRefreshOnly;
--(void) updateDeviceToken:(NSData *)deviceToken;
 @end
