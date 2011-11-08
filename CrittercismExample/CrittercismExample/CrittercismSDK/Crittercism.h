@@ -8,11 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "CrittercismJSON/CrittercismJSONKit.h"
+#import "CrittercismJSONKit.h"
 #import <QuartzCore/QuartzCore.h>
 #import "CrittercismReachability.h"
-#import <CoreData/CoreData.h>
-#import "CrittercismCrash.h"
 //#import "<CoreLocation/CoreLocation.h>"
 
 @class CrittercismViewController;
@@ -28,10 +26,6 @@
 
 
 @interface Crittercism : NSObject {
-    NSManagedObjectModel *managedObjectModel;
-    NSManagedObjectContext *managedObjectContext;
-    NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
 	NSMutableData *responseData;
 	NSObject *voteDisplayer;
 	CrittercismViewController *crittercismViewController;
@@ -40,10 +34,6 @@
 	id <CrittercismDelegate> delegate;    
     BOOL didCrashOnLastLoad;
 }
-
-@property(nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
-@property(nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
-@property(nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 @property(retain) id <CrittercismDelegate> delegate;
 @property(nonatomic, retain) CrittercismViewController *crittercismViewController;
@@ -68,7 +58,7 @@
 + (void) setCurrentOrientation: (int)_orientation;
 + (void) logEvent:(NSString *)_eventName andEventDict:(NSDictionary *)_dict;
 + (void) leaveBreadcrumb:(NSString *)breadcrumb;
-
++ (NSString *) getGMTDateStringWithFormat:(NSString *)format;
 -(NSString *)applicationDocumentsDirectory;
 -(CrittercismViewController *) getCrittercism;
 -(UIViewController *) getMainViewController;
