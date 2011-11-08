@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
 #import "Crittercism.h"
 
-@interface CrittercismRootViewController : UIViewController <NSFetchedResultsControllerDelegate> {
+@interface CrittercismRootViewController : UIViewController {
 	IBOutlet UITableView *feedbackTable;
 	IBOutlet UISearchBar *searchBar;
 	IBOutlet UITextField *searchTF;
@@ -25,8 +24,6 @@
 	IBOutlet UIButton *cancelButton;
 	IBOutlet UIButton *showVotesButton;
 	
-	NSFetchedResultsController *fetchedResultsController;
-    NSManagedObjectContext *managedObjectContext;
 	BOOL searching;
 	BOOL isNavigationHidden;
 	BOOL isRefreshing;
@@ -57,8 +54,6 @@
 
 @property (nonatomic, retain) UITableView *feedbackTable;
 @property (nonatomic, retain) UISearchBar *searchBar;
-@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 -(id) initWithAppID:(NSString *)_app_id andKey:(NSString *)_keyStr andSecret:(NSString *)_secretStr;
 

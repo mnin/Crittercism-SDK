@@ -18,11 +18,11 @@
 -(IBAction) feedbackHit:(id) sender {
     [Crittercism showCrittercism];
 }
--(IBAction) earnVoteHit:(id) sender {
-    [[Crittercism sharedInstance] addVote];    
+-(IBAction) leaveBreadcrumbPressed:(id) sender {
+    [Crittercism leaveBreadcrumb:@"Breadcrumb Left!"];
 }
 -(IBAction) crashHit:(id) sender {
-    [self throwTestError24];
+    [NSException raise:@"your hands in the air" format:@"wave 'em like just don't care"];
 }
 
 -(IBAction) viewDataHit:(id) sender {
@@ -40,13 +40,13 @@
 
 #pragma mark - View lifecycle
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 }
-*/
+
 
 - (void)viewDidUnload
 {
