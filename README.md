@@ -1,4 +1,6 @@
 ## Release Notes
+### Version 2.9.30 (November 30, 2011)
+- Patch for support for iOS 3.x running XCode 4.2
 
 ### Version 2.9.29 (November 23, 2011)
 - Added support for iOS 3.x
