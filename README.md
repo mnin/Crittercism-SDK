@@ -1,4 +1,7 @@
 ## Release Notes
+### Version 2.9.31 (December 3, 2011)
+- Improvements in support forum efficiency
+
 ### Version 2.9.30 (November 30, 2011)
 - Patch for support for iOS 3.x running XCode 4.2
 
