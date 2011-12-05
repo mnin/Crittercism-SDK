@@ -16,13 +16,27 @@
 }
 
 -(IBAction) feedbackHit:(id) sender {
-    [Crittercism showCrittercism];
+    UIAlertView *alert = [[UIAlertView alloc] init];
+    [alert setTitle:@"No Feedback Forum in this SDK"];
+    [alert setMessage:@"This thin SDK does not include the feedback forum"];
+    [alert setDelegate:nil];
+    [alert addButtonWithTitle:@"Ok"];
+    [alert show];
+    [alert release];  
+//    [Crittercism showCrittercism];
 }
--(IBAction) earnVoteHit:(id) sender {
-    [[Crittercism sharedInstance] addVote];    
+-(IBAction) leaveBreadcrumbPressed:(id) sender {
+    [Crittercism leaveBreadcrumb:@"Breadcrumb Button Pressed!"];
 }
 -(IBAction) crashHit:(id) sender {
-    [NSException raise:@"show me" format:@"the money"];
+    [NSException raise:@"Test Breadcrumbs" format:@"It works!"];
+//    [NSException raise:@"da da da da dada dada" format:@"can't touch this"];
+//    [self throwSignal];
+}
+
+-(void) throwSignal {
+    int i = 12345;
+    NSLog( @"%@", i );
 }
 
 -(IBAction) viewDataHit:(id) sender {
@@ -40,13 +54,14 @@
 
 #pragma mark - View lifecycle
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    [Crittercism leaveBreadcrumb:@"ExampleViewController Loaded"];
     [super viewDidLoad];
 }
-*/
+
 
 - (void)viewDidUnload
 {
@@ -63,11 +78,8 @@
 
 #pragma mark CrittercismDelegate
 -(void)crittercismDidCrashOnLastLoad {
+    [Crittercism leaveBreadcrumb:@"App crashed the last time it was loaded"];
     NSLog(@"App crashed the last time it was loaded");
-}
-
--(void) crittercismDidClose {
-    NSLog(@"Crittercism forum was closed, resume game");
 }
 
 @end

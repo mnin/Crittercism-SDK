@@ -13,13 +13,12 @@
     
 }
 
+-(void) throwSignal;
+
 -(IBAction) feedbackHit:(id) sender;
--(IBAction) earnVoteHit:(id) sender;
+-(IBAction) leaveBreadcrumbPressed:(id) sender;
 -(IBAction) crashHit:(id) sender;
 
 -(IBAction) viewDataHit:(id) sender;
-
--(void) crittercismDidClose;
--(void)crittercismDidCrashOnLastLoad;
 
 @end
