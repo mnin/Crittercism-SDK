@@ -24,8 +24,12 @@
     
     [[Crittercism sharedInstance] setDelegate:_viewController];
 
-    [self.window addSubview:_viewController.view];
-//    self.window.rootViewController = self.viewController;
+    if ([self.window respondsToSelector:@selector(rootViewController)]) {
+        self.window.rootViewController = self.viewController;
+    } else {
+        [self.window addSubview:self.viewController.view];
+    }
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

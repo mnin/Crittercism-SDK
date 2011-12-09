@@ -16,20 +16,21 @@
 }
 
 -(IBAction) feedbackHit:(id) sender {
-    UIAlertView *alert = [[UIAlertView alloc] init];
-    [alert setTitle:@"No Feedback Forum in this SDK"];
-    [alert setMessage:@"This thin SDK does not include the feedback forum"];
-    [alert setDelegate:nil];
-    [alert addButtonWithTitle:@"Ok"];
-    [alert show];
-    [alert release];  
-//    [Crittercism showCrittercism];
+    [Crittercism showCrittercism];
 }
 -(IBAction) leaveBreadcrumbPressed:(id) sender {
     [Crittercism leaveBreadcrumb:@"Breadcrumb Button Pressed!"];
 }
+
+-(IBAction) attachMetadataHit:(id) sender {
+    [Crittercism setValue:@"5" forKey:@"Game Level"];
+}
+
 -(IBAction) crashHit:(id) sender {
-    [NSException raise:@"Test Breadcrumbs" format:@"It works!"];
+
+    [NSException raise:@"awesome version 3.0.4 crash" format:@"now with forum support!"];
+    
+//    [NSException raise:@"Test Breadcrumbs" format:@"It works!"];
 //    [NSException raise:@"da da da da dada dada" format:@"can't touch this"];
 //    [self throwSignal];
 }
@@ -37,6 +38,31 @@
 -(void) throwSignal {
     int i = 12345;
     NSLog( @"%@", i );
+}
+
+-(IBAction) critterHit:(id) sender {
+    [Crittercism leaveBreadcrumb:@"Critter is Hit!"];
+    
+    UIAlertView *alert = [[UIAlertView alloc] init];
+    [alert setTitle:@"Hey that tickles!"];
+    [alert setMessage:@"Do you love me?"];
+    [alert setDelegate:self];
+    [alert addButtonWithTitle:@"Yes"];
+    [alert addButtonWithTitle:@"No"];
+    [alert show];
+    [alert release];  
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex == 0)
+	{
+        [Crittercism leaveBreadcrumb:@"I am loved!"];
+	}
+	else if (buttonIndex == 1)
+	{
+        [Crittercism leaveBreadcrumb:@"True love found somewhere else :("];
+	}
 }
 
 -(IBAction) viewDataHit:(id) sender {
@@ -58,7 +84,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [Crittercism leaveBreadcrumb:@"ExampleViewController Loaded"];
+//    [Crittercism leaveBreadcrumb:@"ExampleViewController Loaded"];
     [super viewDidLoad];
 }
 

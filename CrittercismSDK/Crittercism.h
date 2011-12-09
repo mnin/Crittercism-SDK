@@ -13,9 +13,12 @@
 #import "CrittercismReachability.h"
 //#import "<CoreLocation/CoreLocation.h>"
 
+@class CrittercismViewController;
+
 @protocol CrittercismDelegate <NSObject>
 
-@required
+@optional
+-(void) crittercismDidClose;
 -(void) crittercismDidCrashOnLastLoad;
 @end
 
@@ -24,10 +27,18 @@
 	CFMutableDictionaryRef *connectionToInfoMapping;
 	id <CrittercismDelegate> delegate;
     BOOL didCrashOnLastLoad;
+    
+    // Support Forum
+    NSObject *voteDisplayer;
+	CrittercismViewController *crittercismViewController;
+	NSArray *feedbackArray;
 }
 
 @property(retain) id <CrittercismDelegate> delegate;
 @property(assign) BOOL didCrashOnLastLoad;
+@property(nonatomic, retain) CrittercismViewController *crittercismViewController;
+@property(nonatomic, retain) NSObject *voteDisplayer;
+@property(retain) NSArray *feedbackArray;
 
 + (Crittercism*)sharedInstance;
 + (void) initWithAppID:(NSString *)_app_id andKey:(NSString *)_keyStr andSecret:(NSString *)_secretStr;
@@ -46,7 +57,20 @@
 + (void) logEvent:(NSString *)_eventName andEventDict:(NSDictionary *)_dict;
 + (void) leaveBreadcrumb:(NSString *)breadcrumb;
 
-// Server methods
--(void) appLoadedWithLaunch:(BOOL)isAppLaunch;
--(void) updateDeviceToken:(NSData *)deviceToken;
+// Support Forum
++ (void)showCrittercism;
++ (void)showCrittercism:(UIViewController *)_mainViewController;
+-(CrittercismViewController *) getCrittercism;
+-(UIViewController *) getMainViewController;
+-(void) setTintRed:(float) _red green:(float)_green blue:(float)_blue;
+-(void) hideCrittercism;
+-(void) setDisplayer:(NSObject *)_displayer;
+-(void) updateVotes;
+-(void) addVote:(NSString *)_eventName;
+-(void) addVote;
+-(int) getVotes;
+-(void) setVotes:(int) _numVotes;
+-(void) setNavTitle:(NSString *)_title;
+-(NSString *) getNavTitle;
+-(void) addGradient:(UIButton *) _button;
 @end

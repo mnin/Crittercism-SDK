@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Crittercism.h"
 
-@interface CrittercismExampleViewController : UIViewController <CrittercismDelegate>{
+@interface CrittercismExampleViewController : UIViewController <CrittercismDelegate> {
     
 }
 
@@ -17,8 +17,9 @@
 
 -(IBAction) feedbackHit:(id) sender;
 -(IBAction) leaveBreadcrumbPressed:(id) sender;
+-(IBAction) attachMetadataHit:(id) sender;
 -(IBAction) crashHit:(id) sender;
-
+-(IBAction) critterHit:(id) sender;
 -(IBAction) viewDataHit:(id) sender;
 
 @end
