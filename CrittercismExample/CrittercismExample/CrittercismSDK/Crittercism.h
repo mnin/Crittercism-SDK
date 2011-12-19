@@ -42,6 +42,7 @@
 @property(assign) BOOL didCrashOnLastLoad;
 
 + (Crittercism*)sharedInstance;
++ (void)initWithAppID:(NSString *)_app_id andKey:(NSString *)_keyStr andSecret:(NSString *)_secretStr;
 + (void)initWithAppID:(NSString *)_app_id andKey:(NSString *)_keyStr andSecret:(NSString *)_secretStr andMainViewController:(UIViewController *)_mainView;
 + (void)showCrittercism;
 + (void)showCrittercism:(UIViewController *)_mainViewController;

@@ -1,4 +1,7 @@
 ## Release Notes
+### Version 2.9.33 (December 12, 2011)
+- Fixed compability issues with JSON Library
+
 ### Version 2.9.31 (December 3, 2011)
 - Improvements in support forum efficiency
 
