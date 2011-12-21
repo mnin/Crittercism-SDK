@@ -1,4 +1,7 @@
 ## Release Notes
+### Version 2.9.34 (December 20, 2011)
+- Fixed bug with storing app settings
+
 ### Version 2.9.33 (December 12, 2011)
 - Fixed compability issues with JSON Library
 
