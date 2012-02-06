@@ -28,7 +28,7 @@
     [[Crittercism sharedInstance] addVote];    
 }
 -(IBAction) crashHit:(id) sender {
-    [NSException raise:@"show me" format:@"the money"];
+    [NSException raise:@"test" format:@"test crash 2.9.37 crash only"];
 }
 
 -(IBAction) viewDataHit:(id) sender {

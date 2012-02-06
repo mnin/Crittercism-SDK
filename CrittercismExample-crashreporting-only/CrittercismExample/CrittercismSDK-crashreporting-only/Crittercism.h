@@ -60,6 +60,7 @@
 + (void) logEvent:(NSString *)_eventName andEventDict:(NSDictionary *)_dict;
 + (void) leaveBreadcrumb:(NSString *)breadcrumb;
 + (NSString *) getGMTDateStringWithFormat:(NSString *)format;
++ (void) setOptOutStatus: (BOOL) _optOutStatus;
 -(NSString *)applicationDocumentsDirectory;
 -(CrittercismViewController *) getCrittercism;
 -(UIViewController *) getMainViewController;

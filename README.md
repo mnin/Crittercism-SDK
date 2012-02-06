@@ -1,4 +1,13 @@
 ## Release Notes
+### Version 2.9.37 (January 31, 2012)
+- Small bug fixes
+
+### Version 2.9.36 (January 26, 2012)
+- Added support for Opt-Out
+
+### Version 2.9.35 (January 4, 2012)
+- Fixed bug in the support forum that displays Anonymous for admin submitted feedback items instead of Admin
+
 ### Version 2.9.34 (December 20, 2011)
 - Fixed bug with storing app settings
 
