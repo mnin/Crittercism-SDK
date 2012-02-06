@@ -28,29 +28,97 @@
 
 -(IBAction) crashHit:(id) sender {
 
-    [NSException raise:@"awesome version 3.0.4 crash" format:@"now with forum support!"];
-    
+    [NSException raise:@"test version 3.1.3 crash" format:@"awesomeness"];
+
 //    [NSException raise:@"Test Breadcrumbs" format:@"It works!"];
 //    [NSException raise:@"da da da da dada dada" format:@"can't touch this"];
 //    [self throwSignal];
+//    [self throwExceptionInThread];
+//    [self throwSignalInThread];
+//    [self throwRandomException];
+//    staticException();
+//    staticSignal();
+//    [self nestedStaticException];
+//    [self nestedStaticSignal];
 }
 
+//
+// Here are all the ways you can raise exceptions and signals
+//
 -(void) throwSignal {
     int i = 12345;
-    NSLog( @"%@", i );
+    NSLog(@"%@", i);
 }
+
+-(void) throwNestedSignal {
+    [self throwSignal];
+}
+
+-(void) throwExceptionInThread {
+    dispatch_async( dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(3);
+//        dispatch_async( dispatch_get_main_queue(), ^{
+            // Add code here to update the UI/send notifications based on the
+            // results of the background processing
+//        });
+    });
+    dispatch_async( dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // This thread should explode
+        [NSException raise:@"threaded exception!" format:@"one guy sleeps, the other messes up"];
+    });
+}
+
+-(void) throwSignalInThread {
+    dispatch_async( dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(3);
+    });
+    dispatch_async( dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // This thread should explode
+        [self throwNestedSignal];
+    });
+}
+
+-(void) throwRandomException {
+    NSString *alphabet  = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXZY0123456789";
+    NSMutableString *s = [NSMutableString stringWithCapacity:20];
+    for (NSUInteger i = 0U; i < 20; i++) {
+        u_int32_t r = arc4random() % [alphabet length];
+        unichar c = [alphabet characterAtIndex:r];
+        [s appendFormat:@"%C", c];
+    }
+    [NSException raise:s format:@"oops!"];
+}
+
+//static void staticException() {
+//    // Wrong stacktrace here?
+//    [NSException raise:@"static exception!" format:@"oh shit, do we get the right symbol?"];
+//}
+//
+//static void staticSignal() {
+//    int i = 12345;
+//    int j = 34567;
+//    NSLog( @"%@", i+j );
+//}
+//
+//-(void) nestedStaticException {
+//    staticException();
+//}
+//
+//-(void) nestedStaticSignal {
+//    staticSignal();
+//}
 
 -(IBAction) critterHit:(id) sender {
     [Crittercism leaveBreadcrumb:@"Critter is Hit!"];
-    
+
     UIAlertView *alert = [[UIAlertView alloc] init];
     [alert setTitle:@"Hey that tickles!"];
-    [alert setMessage:@"Do you love me?"];
+    [alert setMessage:@"Do you love Crittercism?"];
     [alert setDelegate:self];
     [alert addButtonWithTitle:@"Yes"];
     [alert addButtonWithTitle:@"No"];
     [alert show];
-    [alert release];  
+    [alert release];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -74,7 +142,7 @@
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
+
     // Release any cached data, images, etc that aren't in use.
 }
 

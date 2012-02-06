@@ -1,4 +1,26 @@
 ## Release Notes
+### Version 3.1.3 (February 1, 2012)
+- Small Bug Fixes
+
+### Version 3.1.2 (January 26, 2012)
+- More Small Optimizations
+
+### Version 3.1.1 (January 24, 2012)
+- Small Optimizations
+
+### Version 3.1.0 (January 22, 2012)
+- Added API Support for Opt-Out
+- Fixed bug that causes a small number of crashes to be symbolized incorrectly
+
+### Version 3.0.7 (January 9, 2012)
+- Fixed minor bug with leaving breadcrumbs
+
+### Version 3.0.6 (January 6, 2012)
+- Fixed bug with resuming from background
+
+### Version 3.0.5 (January 5, 2012)
+- Fixed bug in the support forum that displays Anonymous for admin submitted feedback items instead of Admin
+
 ### Version 3.0.4 (December 6, 2011)
 - Added Support for Forums
 - Added Backwards Compatibility for v3.0.3 and below

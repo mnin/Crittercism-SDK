@@ -56,6 +56,7 @@
 + (void) setCurrentOrientation: (int)_orientation;
 + (void) logEvent:(NSString *)_eventName andEventDict:(NSDictionary *)_dict;
 + (void) leaveBreadcrumb:(NSString *)breadcrumb;
++ (void) setOptOutStatus: (BOOL) _optOutStatus;
 
 // Support Forum
 + (void)showCrittercism;
