@@ -1,4 +1,11 @@
 ## Release Notes
+### Version 3.2.1 (February 26, 2012)
+- Fixed bug with recursion error
+
+### Version 3.2.0 (February 24, 2012)
+- Handled exception support
+- When your app crashes due to an uncaught exception, we now call your existing NSUncaughtExceptionHandler
+
 ### Version 3.1.3 (February 1, 2012)
 - Small Bug Fixes
 
