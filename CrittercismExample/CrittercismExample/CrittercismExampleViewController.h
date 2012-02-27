@@ -29,6 +29,7 @@
 -(IBAction) leaveBreadcrumbPressed:(id) sender;
 -(IBAction) attachMetadataHit:(id) sender;
 -(IBAction) crashHit:(id) sender;
+-(IBAction) exceptionHit:(id) sender;
 -(IBAction) critterHit:(id) sender;
 -(IBAction) viewDataHit:(id) sender;
 

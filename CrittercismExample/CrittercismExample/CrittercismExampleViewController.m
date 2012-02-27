@@ -42,6 +42,15 @@
 //    [self nestedStaticSignal];
 }
 
+-(IBAction) exceptionHit:(id)sender {
+    @try {
+        [NSException raise:@"i'm in your codez raisin ur exceptionz" format:@"LOL"];
+    }
+    @catch (NSException *exception) {
+        [Crittercism logHandledException:exception];
+    }
+}
+
 //
 // Here are all the ways you can raise exceptions and signals
 //
