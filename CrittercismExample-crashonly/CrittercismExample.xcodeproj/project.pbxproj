@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E8AF828146CBA210025CBDB /* hamster_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AF827146CBA210025CBDB /* hamster_57x57.png */; };
+		2E925B0D13D7CE2100E574FF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E925B0C13D7CE2100E574FF /* CoreData.framework */; };
+		2EAB47B313ABBD2200A1D09B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAB47B213ABBD2200A1D09B /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2EAB47B513ABBD2200A1D09B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAB47B413ABBD2200A1D09B /* Foundation.framework */; };
+		2EAB47B713ABBD2200A1D09B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAB47B613ABBD2200A1D09B /* CoreGraphics.framework */; };
+		2EAB47BD13ABBD2200A1D09B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB47BB13ABBD2200A1D09B /* InfoPlist.strings */; };
+		2EAB47C013ABBD2200A1D09B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB47BF13ABBD2200A1D09B /* main.m */; };
+		2EAB47C313ABBD2200A1D09B /* CrittercismExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB47C213ABBD2200A1D09B /* CrittercismExampleAppDelegate.m */; };
+		2EAB47C613ABBD2200A1D09B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB47C413ABBD2200A1D09B /* MainWindow.xib */; };
+		2EAB47C913ABBD2200A1D09B /* CrittercismExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB47C813ABBD2200A1D09B /* CrittercismExampleViewController.m */; };
+		2EAB47CC13ABBD2200A1D09B /* CrittercismExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB47CA13ABBD2200A1D09B /* CrittercismExampleViewController.xib */; };
+		2EAB488013ABC52A00A1D09B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAB487F13ABC52A00A1D09B /* QuartzCore.framework */; };
+		2EAB488213ABC55600A1D09B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAB488113ABC55600A1D09B /* CoreLocation.framework */; };
+		2EEE92131529A7A4003A8027 /* libCrittercismCrashOnly_v3_1_5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEE91F91529A7A4003A8027 /* libCrittercismCrashOnly_v3_1_5.a */; };
+		2EF66CAF13CC17DC00910A18 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF66CAE13CC17DC00910A18 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E8AF827146CBA210025CBDB /* hamster_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamster_57x57.png; sourceTree = "<group>"; };
+		2E925B0C13D7CE2100E574FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2EAB47AE13ABBD2200A1D09B /* CrittercismExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrittercismExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAB47B213ABBD2200A1D09B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2EAB47B413ABBD2200A1D09B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2EAB47B613ABBD2200A1D09B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2EAB47BA13ABBD2200A1D09B /* CrittercismExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrittercismExample-Info.plist"; sourceTree = "<group>"; };
+		2EAB47BC13ABBD2200A1D09B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2EAB47BE13ABBD2200A1D09B /* CrittercismExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrittercismExample-Prefix.pch"; sourceTree = "<group>"; };
+		2EAB47BF13ABBD2200A1D09B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EAB47C113ABBD2200A1D09B /* CrittercismExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrittercismExampleAppDelegate.h; sourceTree = "<group>"; };
+		2EAB47C213ABBD2200A1D09B /* CrittercismExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrittercismExampleAppDelegate.m; sourceTree = "<group>"; };
+		2EAB47C513ABBD2200A1D09B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2EAB47C713ABBD2200A1D09B /* CrittercismExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrittercismExampleViewController.h; sourceTree = "<group>"; };
+		2EAB47C813ABBD2200A1D09B /* CrittercismExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrittercismExampleViewController.m; sourceTree = "<group>"; };
+		2EAB47CB13ABBD2200A1D09B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CrittercismExampleViewController.xib; sourceTree = "<group>"; };
+		2EAB487F13ABC52A00A1D09B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2EAB488113ABC55600A1D09B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2EEE91F51529A7A4003A8027 /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
+		2EEE91F61529A7A4003A8027 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
+		2EEE91F71529A7A4003A8027 /* CrittercismJSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismJSONKit.h; sourceTree = "<group>"; };
+		2EEE91F81529A7A4003A8027 /* CrittercismReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismReachability.h; sourceTree = "<group>"; };
+		2EEE91F91529A7A4003A8027 /* libCrittercismCrashOnly_v3_1_5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercismCrashOnly_v3_1_5.a; sourceTree = "<group>"; };
+		2EEE91FA1529A7A4003A8027 /* PLCrashAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashAsync.h; sourceTree = "<group>"; };
+		2EEE91FB1529A7A4003A8027 /* PLCrashAsyncImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashAsyncImage.h; sourceTree = "<group>"; };
+		2EEE91FC1529A7A4003A8027 /* PLCrashAsyncSignalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashAsyncSignalInfo.h; sourceTree = "<group>"; };
+		2EEE91FD1529A7A4003A8027 /* PLCrashFrameWalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker.h; sourceTree = "<group>"; };
+		2EEE91FE1529A7A4003A8027 /* PLCrashFrameWalker_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker_arm.h; sourceTree = "<group>"; };
+		2EEE91FF1529A7A4003A8027 /* PLCrashFrameWalker_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker_i386.h; sourceTree = "<group>"; };
+		2EEE92001529A7A4003A8027 /* PLCrashFrameWalker_ppc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker_ppc.h; sourceTree = "<group>"; };
+		2EEE92011529A7A4003A8027 /* PLCrashFrameWalker_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker_x86_64.h; sourceTree = "<group>"; };
+		2EEE92021529A7A4003A8027 /* PLCrashLogWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashLogWriter.h; sourceTree = "<group>"; };
+		2EEE92031529A7A4003A8027 /* PLCrashLogWriterEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashLogWriterEncoding.h; sourceTree = "<group>"; };
+		2EEE92041529A7A4003A8027 /* PLCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReport.h; sourceTree = "<group>"; };
+		2EEE92051529A7A4003A8027 /* PLCrashReportApplicationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportApplicationInfo.h; sourceTree = "<group>"; };
+		2EEE92061529A7A4003A8027 /* PLCrashReportBinaryImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportBinaryImageInfo.h; sourceTree = "<group>"; };
+		2EEE92071529A7A4003A8027 /* PLCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReporter.h; sourceTree = "<group>"; };
+		2EEE92081529A7A4003A8027 /* PLCrashReportExceptionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportExceptionInfo.h; sourceTree = "<group>"; };
+		2EEE92091529A7A4003A8027 /* PLCrashReportFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportFormatter.h; sourceTree = "<group>"; };
+		2EEE920A1529A7A4003A8027 /* PLCrashReportMachineInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportMachineInfo.h; sourceTree = "<group>"; };
+		2EEE920B1529A7A4003A8027 /* PLCrashReportProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportProcessInfo.h; sourceTree = "<group>"; };
+		2EEE920C1529A7A4003A8027 /* PLCrashReportProcessorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportProcessorInfo.h; sourceTree = "<group>"; };
+		2EEE920D1529A7A4003A8027 /* PLCrashReportSignalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportSignalInfo.h; sourceTree = "<group>"; };
+		2EEE920E1529A7A4003A8027 /* PLCrashReportSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportSystemInfo.h; sourceTree = "<group>"; };
+		2EEE920F1529A7A4003A8027 /* PLCrashReportTextFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportTextFormatter.h; sourceTree = "<group>"; };
+		2EEE92101529A7A4003A8027 /* PLCrashReportThreadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportThreadInfo.h; sourceTree = "<group>"; };
+		2EEE92111529A7A4003A8027 /* PLCrashSignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashSignalHandler.h; sourceTree = "<group>"; };
+		2EEE92121529A7A4003A8027 /* PLCrashSysctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashSysctl.h; sourceTree = "<group>"; };
+		2EF66CAE13CC17DC00910A18 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EAB47AB13ABBD2200A1D09B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E925B0D13D7CE2100E574FF /* CoreData.framework in Frameworks */,
+				2EF66CAF13CC17DC00910A18 /* SystemConfiguration.framework in Frameworks */,
+				2EAB488213ABC55600A1D09B /* CoreLocation.framework in Frameworks */,
+				2EAB488013ABC52A00A1D09B /* QuartzCore.framework in Frameworks */,
+				2EAB47B313ABBD2200A1D09B /* UIKit.framework in Frameworks */,
+				2EAB47B513ABBD2200A1D09B /* Foundation.framework in Frameworks */,
+				2EAB47B713ABBD2200A1D09B /* CoreGraphics.framework in Frameworks */,
+				2EEE92131529A7A4003A8027 /* libCrittercismCrashOnly_v3_1_5.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EAB47A313ABBD2200A1D09B = {
+			isa = PBXGroup;
+			children = (
+				2E8AF827146CBA210025CBDB /* hamster_57x57.png */,
+				2E925B0C13D7CE2100E574FF /* CoreData.framework */,
+				2EF66CAE13CC17DC00910A18 /* SystemConfiguration.framework */,
+				2EAB488113ABC55600A1D09B /* CoreLocation.framework */,
+				2EAB487F13ABC52A00A1D09B /* QuartzCore.framework */,
+				2EAB47B813ABBD2200A1D09B /* CrittercismExample */,
+				2EAB47B113ABBD2200A1D09B /* Frameworks */,
+				2EAB47AF13ABBD2200A1D09B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EAB47AF13ABBD2200A1D09B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB47AE13ABBD2200A1D09B /* CrittercismExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EAB47B113ABBD2200A1D09B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB47B213ABBD2200A1D09B /* UIKit.framework */,
+				2EAB47B413ABBD2200A1D09B /* Foundation.framework */,
+				2EAB47B613ABBD2200A1D09B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EAB47B813ABBD2200A1D09B /* CrittercismExample */ = {
+			isa = PBXGroup;
+			children = (
+				2EEE91F41529A7A4003A8027 /* CrittercismSDK-crashonly */,
+				2EAB47C113ABBD2200A1D09B /* CrittercismExampleAppDelegate.h */,
+				2EAB47C213ABBD2200A1D09B /* CrittercismExampleAppDelegate.m */,
+				2EAB47C413ABBD2200A1D09B /* MainWindow.xib */,
+				2EAB47C713ABBD2200A1D09B /* CrittercismExampleViewController.h */,
+				2EAB47C813ABBD2200A1D09B /* CrittercismExampleViewController.m */,
+				2EAB47CA13ABBD2200A1D09B /* CrittercismExampleViewController.xib */,
+				2EAB47B913ABBD2200A1D09B /* Supporting Files */,
+			);
+			path = CrittercismExample;
+			sourceTree = "<group>";
+		};
+		2EAB47B913ABBD2200A1D09B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB47BA13ABBD2200A1D09B /* CrittercismExample-Info.plist */,
+				2EAB47BB13ABBD2200A1D09B /* InfoPlist.strings */,
+				2EAB47BE13ABBD2200A1D09B /* CrittercismExample-Prefix.pch */,
+				2EAB47BF13ABBD2200A1D09B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EEE91F41529A7A4003A8027 /* CrittercismSDK-crashonly */ = {
+			isa = PBXGroup;
+			children = (
+				2EEE91F51529A7A4003A8027 /* CrashReporter.h */,
+				2EEE91F61529A7A4003A8027 /* Crittercism.h */,
+				2EEE91F71529A7A4003A8027 /* CrittercismJSONKit.h */,
+				2EEE91F81529A7A4003A8027 /* CrittercismReachability.h */,
+				2EEE91F91529A7A4003A8027 /* libCrittercismCrashOnly_v3_1_5.a */,
+				2EEE91FA1529A7A4003A8027 /* PLCrashAsync.h */,
+				2EEE91FB1529A7A4003A8027 /* PLCrashAsyncImage.h */,
+				2EEE91FC1529A7A4003A8027 /* PLCrashAsyncSignalInfo.h */,
+				2EEE91FD1529A7A4003A8027 /* PLCrashFrameWalker.h */,
+				2EEE91FE1529A7A4003A8027 /* PLCrashFrameWalker_arm.h */,
+				2EEE91FF1529A7A4003A8027 /* PLCrashFrameWalker_i386.h */,
+				2EEE92001529A7A4003A8027 /* PLCrashFrameWalker_ppc.h */,
+				2EEE92011529A7A4003A8027 /* PLCrashFrameWalker_x86_64.h */,
+				2EEE92021529A7A4003A8027 /* PLCrashLogWriter.h */,
+				2EEE92031529A7A4003A8027 /* PLCrashLogWriterEncoding.h */,
+				2EEE92041529A7A4003A8027 /* PLCrashReport.h */,
+				2EEE92051529A7A4003A8027 /* PLCrashReportApplicationInfo.h */,
+				2EEE92061529A7A4003A8027 /* PLCrashReportBinaryImageInfo.h */,
+				2EEE92071529A7A4003A8027 /* PLCrashReporter.h */,
+				2EEE92081529A7A4003A8027 /* PLCrashReportExceptionInfo.h */,
+				2EEE92091529A7A4003A8027 /* PLCrashReportFormatter.h */,
+				2EEE920A1529A7A4003A8027 /* PLCrashReportMachineInfo.h */,
+				2EEE920B1529A7A4003A8027 /* PLCrashReportProcessInfo.h */,
+				2EEE920C1529A7A4003A8027 /* PLCrashReportProcessorInfo.h */,
+				2EEE920D1529A7A4003A8027 /* PLCrashReportSignalInfo.h */,
+				2EEE920E1529A7A4003A8027 /* PLCrashReportSystemInfo.h */,
+				2EEE920F1529A7A4003A8027 /* PLCrashReportTextFormatter.h */,
+				2EEE92101529A7A4003A8027 /* PLCrashReportThreadInfo.h */,
+				2EEE92111529A7A4003A8027 /* PLCrashSignalHandler.h */,
+				2EEE92121529A7A4003A8027 /* PLCrashSysctl.h */,
+			);
+			path = "CrittercismSDK-crashonly";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EAB47AD13ABBD2200A1D09B /* CrittercismExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EAB47CF13ABBD2200A1D09B /* Build configuration list for PBXNativeTarget "CrittercismExample" */;
+			buildPhases = (
+				2EAB47AA13ABBD2200A1D09B /* Sources */,
+				2EAB47AB13ABBD2200A1D09B /* Frameworks */,
+				2EAB47AC13ABBD2200A1D09B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrittercismExample;
+			productName = CrittercismExample;
+			productReference = 2EAB47AE13ABBD2200A1D09B /* CrittercismExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EAB47A513ABBD2200A1D09B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Crittercism;
+			};
+			buildConfigurationList = 2EAB47A813ABBD2200A1D09B /* Build configuration list for PBXProject "CrittercismExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2EAB47A313ABBD2200A1D09B;
+			productRefGroup = 2EAB47AF13ABBD2200A1D09B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EAB47AD13ABBD2200A1D09B /* CrittercismExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EAB47AC13ABBD2200A1D09B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAB47BD13ABBD2200A1D09B /* InfoPlist.strings in Resources */,
+				2EAB47C613ABBD2200A1D09B /* MainWindow.xib in Resources */,
+				2EAB47CC13ABBD2200A1D09B /* CrittercismExampleViewController.xib in Resources */,
+				2E8AF828146CBA210025CBDB /* hamster_57x57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EAB47AA13ABBD2200A1D09B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAB47C013ABBD2200A1D09B /* main.m in Sources */,
+				2EAB47C313ABBD2200A1D09B /* CrittercismExampleAppDelegate.m in Sources */,
+				2EAB47C913ABBD2200A1D09B /* CrittercismExampleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EAB47BB13ABBD2200A1D09B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EAB47BC13ABBD2200A1D09B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2EAB47C413ABBD2200A1D09B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EAB47C513ABBD2200A1D09B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		2EAB47CA13ABBD2200A1D09B /* CrittercismExampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EAB47CB13ABBD2200A1D09B /* en */,
+			);
+			name = CrittercismExampleViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EAB47CD13ABBD2200A1D09B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2EAB47CE13ABBD2200A1D09B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		2EAB47D013ABBD2200A1D09B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrittercismExample/CrittercismExample-Prefix.pch";
+				INFOPLIST_FILE = "CrittercismExample/CrittercismExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CrittercismExample/CrittercismSDK\"",
+					"\"$(SRCROOT)/CrittercismExample/Archive/CrittercismExample/CrittercismExample/CrittercismSDK\"",
+					"\"$(SRCROOT)/CrittercismExample/Archive/CrittercismSDK\"",
+					"\"$(SRCROOT)/CrittercismSDK\"",
+					"\"$(SRCROOT)/CrittercismExample/CrittercismSDK-crashreporting-only\"",
+					"\"$(SRCROOT)/../../../../../../../Desktop\"",
+					"\"$(SRCROOT)/../CrittercismSDK\"",
+					"\"$(SRCROOT)/../../../../../../Downloads/CrittercismSDK_appcred\"",
+					"\"$(SRCROOT)/CrittercismExample/CrittercismSDK-crashonly\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2EAB47D113ABBD2200A1D09B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrittercismExample/CrittercismExample-Prefix.pch";
+				INFOPLIST_FILE = "CrittercismExample/CrittercismExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CrittercismExample/CrittercismSDK\"",
+					"\"$(SRCROOT)/CrittercismExample/Archive/CrittercismExample/CrittercismExample/CrittercismSDK\"",
+					"\"$(SRCROOT)/CrittercismExample/Archive/CrittercismSDK\"",
+					"\"$(SRCROOT)/CrittercismSDK\"",
+					"\"$(SRCROOT)/CrittercismExample/CrittercismSDK-crashreporting-only\"",
+					"\"$(SRCROOT)/../../../../../../../Desktop\"",
+					"\"$(SRCROOT)/../CrittercismSDK\"",
+					"\"$(SRCROOT)/../../../../../../Downloads/CrittercismSDK_appcred\"",
+					"\"$(SRCROOT)/CrittercismExample/CrittercismSDK-crashonly\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EAB47A813ABBD2200A1D09B /* Build configuration list for PBXProject "CrittercismExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EAB47CD13ABBD2200A1D09B /* Debug */,
+				2EAB47CE13ABBD2200A1D09B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EAB47CF13ABBD2200A1D09B /* Build configuration list for PBXNativeTarget "CrittercismExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EAB47D013ABBD2200A1D09B /* Debug */,
+				2EAB47D113ABBD2200A1D09B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EAB47A513ABBD2200A1D09B /* Project object */;
+}
