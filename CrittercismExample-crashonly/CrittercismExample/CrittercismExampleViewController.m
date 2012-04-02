@@ -34,7 +34,7 @@
 
 -(IBAction) crashHit:(id) sender {
 
-    [NSException raise:@"test crash only 3.1.3" format:@"crash only!"];
+    [NSException raise:@"test crash only 3.2.4" format:@"crash only!"];
 
 //    [NSException raise:@"Test Breadcrumbs" format:@"It works!"];
 //    [NSException raise:@"da da da da dada dada" format:@"can't touch this"];
