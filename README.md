@@ -12,6 +12,12 @@
 - Handled exception support
 - When your app crashes due to an uncaught exception, we now call your existing NSUncaughtExceptionHandler
 
+### Version 3.1.5 (April 1, 2012)
+- Library no longer hashes on UDID, we now send a random identifier
+
+### Version 3.1.4 (February 14, 2012)
+- Fixed bug with recursion error
+
 ### Version 3.1.3 (February 1, 2012)
 - Small Bug Fixes
 
