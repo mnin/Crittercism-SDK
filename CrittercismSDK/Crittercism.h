@@ -57,8 +57,6 @@
 + (void) setValue:(NSString *)value forKey:(NSString *)key;
 + (int) getCurrentOrientation;
 + (void) setCurrentOrientation: (int)_orientation;
-+ (void) logEvent:(NSString *)_eventName andEventDict:(NSDictionary *)_dict;
-+ (BOOL) logHandledException:(NSException *)exception;
 + (void) leaveBreadcrumb:(NSString *)breadcrumb;
 + (void) setOptOutStatus: (BOOL) _optOutStatus;
 + (BOOL) getOptOutStatus;
@@ -79,5 +77,8 @@
 - (void) setNavTitle:(NSString *)_title;
 - (NSString *) getNavTitle;
 - (void) addGradient:(UIButton *) _button;
+
+// Beta Features: Email support@crittercism.com for access
++ (BOOL) logHandledException:(NSException *)exception;
 
 @end

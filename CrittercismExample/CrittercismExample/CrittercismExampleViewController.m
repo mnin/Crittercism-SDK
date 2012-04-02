@@ -28,7 +28,7 @@
 
 -(IBAction) crashHit:(id) sender {
 
-    [NSException raise:@"test version 3.1.3 crash" format:@"awesomeness"];
+    [NSException raise:@"test version 3.2.4 crash" format:@"awesomeness"];
 
 //    [NSException raise:@"Test Breadcrumbs" format:@"It works!"];
 //    [NSException raise:@"da da da da dada dada" format:@"can't touch this"];
@@ -40,15 +40,6 @@
 //    staticSignal();
 //    [self nestedStaticException];
 //    [self nestedStaticSignal];
-}
-
--(IBAction) exceptionHit:(id)sender {
-    @try {
-        [NSException raise:@"i'm in your codez raisin ur exceptionz" format:@"LOL"];
-    }
-    @catch (NSException *exception) {
-        [Crittercism logHandledException:exception];
-    }
 }
 
 //

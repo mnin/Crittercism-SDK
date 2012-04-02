@@ -22,6 +22,9 @@
     // Override point for customization after application launch.
     [Crittercism initWithAppID:@"4ce2d43766d78766a1000013" andKey:@"4ce2d43766d78766a1000013pyat0f4l" andSecret:@"irv8zk5b4xvrbzuo3pghlck9mh2fdewa" andMainViewController: _viewController];
 
+    
+
+
     [[Crittercism sharedInstance] setDelegate:_viewController];
 
     if ([self.window respondsToSelector:@selector(rootViewController)]) {

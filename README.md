@@ -1,4 +1,10 @@
 ## Release Notes
+### Version 3.2.4 (April 1, 2012)
+- Bug fixes for generating unique ID for new devices
+
+### Version 3.2.3 (March 28, 2012)
+- Library no longer hashes on UDID, we now send a random identifier
+
 ### Version 3.2.1 (February 26, 2012)
 - Fixed bug with recursion error
 

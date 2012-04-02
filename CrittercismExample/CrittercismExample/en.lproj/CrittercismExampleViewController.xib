@@ -100,7 +100,7 @@
 						<string key="NSFrame">{{20, 220}, {280, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="296424474"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -108,27 +108,6 @@
 						<reference key="IBUIFont" ref="965685031"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Crash</string>
-						<reference key="IBUIHighlightedTitleColor" ref="830835552"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="43490084"/>
-					</object>
-					<object class="IBUIButton" id="296424474">
-						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 270}, {280, 37}}</string>
-						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="421205631"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="965685031"/>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Handle Exception</string>
 						<reference key="IBUIHighlightedTitleColor" ref="830835552"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
@@ -184,7 +163,6 @@
 						<string key="NSFrame">{{20, 433}, {334, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -324,15 +302,6 @@
 					</object>
 					<int key="connectionID">26</int>
 				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">exceptionHit:</string>
-						<reference key="source" ref="296424474"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">29</int>
-				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -369,7 +338,6 @@
 							<reference ref="281949487"/>
 							<reference ref="109904129"/>
 							<reference ref="421205631"/>
-							<reference ref="296424474"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -422,12 +390,6 @@
 						<reference key="object" ref="421205631"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">27</int>
-						<reference key="object" ref="296424474"/>
-						<reference key="parent" ref="774585933"/>
-						<string key="objectName">Button - Handle Exception</string>
-					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -445,7 +407,6 @@
 					<string>18.IBPluginDependency</string>
 					<string>21.IBPluginDependency</string>
 					<string>25.IBPluginDependency</string>
-					<string>27.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
@@ -455,7 +416,6 @@
 					<string>CrittercismExampleViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>UIResponder</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
