@@ -19,17 +19,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.    
-    [Crittercism initWithAppID:@"4ce2d43766d78766a1000013" andKey:@"4ce2d43766d78766a1000013pyat0f4l" andSecret:@"irv8zk5b4xvrbzuo3pghlck9mh2fdewa" andMainViewController:_viewController];
+    // Override point for customization after application launch.
+    [Crittercism initWithAppID:@"4ce2d43766d78766a1000013" andKey:@"4ce2d43766d78766a1000013pyat0f4l" andSecret:@"irv8zk5b4xvrbzuo3pghlck9mh2fdewa" andMainViewController: _viewController];
+
     
+
+
     [[Crittercism sharedInstance] setDelegate:_viewController];
-    
+
     if ([self.window respondsToSelector:@selector(rootViewController)]) {
         self.window.rootViewController = self.viewController;
     } else {
         [self.window addSubview:self.viewController.view];
     }
-    
 
     [self.window makeKeyAndVisible];
     return YES;
@@ -46,7 +48,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
      If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      */
 }
