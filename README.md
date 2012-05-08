@@ -1,4 +1,8 @@
 ## Release Notes
+### Version 3.2.5 (May 2, 2012)
+- Upgraded JSON Library
+- Added New Example App
+
 ### Version 3.2.4 (April 1, 2012)
 - Bug fixes for generating unique ID for new devices
 
