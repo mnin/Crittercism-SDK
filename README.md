@@ -1,4 +1,21 @@
 ## Release Notes
+### Version 3.2.5 (May 2, 2012)
+- Upgraded JSON Library
+- Added New Example App
+
+### Version 3.2.4 (April 1, 2012)
+- Bug fixes for generating unique ID for new devices
+
+### Version 3.2.3 (March 28, 2012)
+- Library no longer hashes on UDID, we now send a random identifier
+
+### Version 3.2.1 (February 26, 2012)
+- Fixed bug with recursion error
+
+### Version 3.2.0 (February 24, 2012)
+- Handled exception support
+- When your app crashes due to an uncaught exception, we now call your existing NSUncaughtExceptionHandler
+
 ### Version 3.1.5 (April 1, 2012)
 - Library no longer hashes on UDID, we now send a random identifier
 
