@@ -47,5 +47,8 @@
 + (void) setOptOutStatus: (BOOL) _optOutStatus;
 + (BOOL) getOptOutStatus;
 
+// Beta Features: Email support@crittercism.com for access
++ (BOOL) logHandledException:(NSException *)exception;
+
 @end
 
