@@ -1,4 +1,11 @@
 ## Release Notes
+### Version 3.3.1 (August 14, 2012)
+- Deprecated key and secret in initialization method
+- Added Delegate to initialization method
+
+### Version 3.2.6 (June 2, 2012)
+- Fixed bug with crittercismDidCrashOnLastLoad delegate
+
 ### Version 3.2.5 (May 2, 2012)
 - Upgraded JSON Library
 - Added New Example App
