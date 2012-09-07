@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Crittercism.h"
 
-@interface CrittercismExampleAppViewController : UIViewController {
+@interface CrittercismExampleAppViewController : UIViewController <CrittercismDelegate> {
     
 }
 

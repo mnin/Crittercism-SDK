@@ -8,6 +8,7 @@
 .container_right{
     float: left;
     margin-left:0px;
+    margin-right:0;
     position: relative;
     min-width: 960px;
     border-left: 2px solid #ccc;
@@ -16,7 +17,8 @@
     -moz-box-shadow: -100px 0px 100px -100px rgba(0,0,0,.15);
     -o-box-shadow: -100px 0px 100px -100px rgba(0,0,0,.15);
     box-shadow: -100px 0px 100px -100px rgba(0,0,0,.15);
-    padding-bottom: 10px;
+    padding-bottom: 1%;
+    padding-top:1%;
 }
 .container_95{
     min-width: 960px;

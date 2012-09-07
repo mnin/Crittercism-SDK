@@ -23,11 +23,18 @@
     [self.window makeKeyAndVisible];
     
 // ******
-//  #####  Initialize Crittercism (this is the init code for the example project
+//  #####  Initialize Crittercism (this is the init code for the example project)
 //  #####  View the data here: https://www.crittercism.com/developers/demo
 // ******
     
-    [Crittercism initWithAppID:@"4ce2d43766d78766a1000013" andKey:@"4ce2d43766d78766a1000013pyat0f4l" andSecret:@"irv8zk5b4xvrbzuo3pghlck9mh2fdewa" andMainViewController: _viewController];
+    // Basic Implementation
+    //[Crittercism initWithAppID:@"4ce2d43766d78766a1000013"];
+    
+    // Implementation with Support Forum
+    //[Crittercism initWithAppID:@"4ce2d43766d78766a1000013" andMainViewController: _viewController];
+    
+    // Implementation with Support Forum and Delegate
+    [Crittercism initWithAppID:@"4ce2d43766d78766a1000013" andMainViewController:_viewController andDelegate:_viewController];
     
     return YES;
 }

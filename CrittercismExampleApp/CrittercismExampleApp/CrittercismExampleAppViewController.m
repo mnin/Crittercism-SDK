@@ -19,12 +19,13 @@
 }
 
 -(IBAction) attachMetadataHit:(id) sender {
+//    [Crittercism setUsername:@"crittercism"];
     [Crittercism setValue:@"5" forKey:@"Game Level"];
 }
 
 -(IBAction) crashHit:(id) sender {
     
-    [NSException raise:@"test version 3.2.5 crash" format:@"awesomeness"];
+    [NSException raise:@"test version 3.3.1 crash" format:@"awesomeness"];
     
     //    [NSException raise:@"Test Breadcrumbs" format:@"It works!"];
     //    [NSException raise:@"da da da da dada dada" format:@"can't touch this"];
@@ -38,9 +39,24 @@
     //    [self nestedStaticSignal];
 }
 
-//
+-(IBAction) exceptionHit:(id) sender {
+    @try {
+        [NSException raise:@"test handled exception" format:@"excellent"];
+    }
+    @catch (NSException *exception) {
+        // Log a handled exception to Crittercism
+        [Crittercism logHandledException:exception];
+    }
+    @finally {
+        NSLog(@"Handled Exception Thrown and Caught!  First exception is sent immediately, then a maximum of 3 are sent per minute");
+    }
+}
+
+// ********
+// 
 // Here are all the ways you can raise exceptions and signals
-//
+// 
+// *********
 -(void) throwSignal {
     int i = 12345;
     NSLog(@"%@", i);
@@ -83,6 +99,12 @@
         [s appendFormat:@"%C", c];
     }
     [NSException raise:s format:@"oops!"];
+}
+
+// Implement the protocol
+#pragma mark CrittercismDelegate
+-(void)crittercismDidCrashOnLastLoad {
+    NSLog(@"App crashed the last time it was loaded");
 }
 
 //static void staticException() {
