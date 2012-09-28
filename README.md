@@ -1,4 +1,16 @@
 ## Release Notes
+### Version 3.3.4 (September 20, 2012)
+- Re-build of 3.3.3 with the official Apple release of XCode 4.5.
+
+### Version 3.3.3 (RC) (September 13, 2012)
+- Support for iOS 6
+- Adds support for ARMv7s Architecture
+- Drops support for ARMv6 Architecture
+
+### Version 3.3.2 (September 5, 2012)
+- Changed max limit of breadcrumbs to 100 breadcrumbs per crash
+- Changed max limit of each breadcrumb to 140 characters
+
 ### Version 3.3.1 (August 14, 2012)
 - Deprecated key and secret in initialization method
 - Added Delegate to initialization method
