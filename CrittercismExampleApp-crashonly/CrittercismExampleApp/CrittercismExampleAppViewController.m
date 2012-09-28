@@ -49,7 +49,7 @@
 
 -(IBAction) crashHit:(id) sender {
     
-    [NSException raise:@"test version 3.3.1 crash" format:@"awesomeness"];
+    [NSException raise:@"test version 3.3.2 crash only" format:@"awesomeness"];
     
     //    [NSException raise:@"Test Breadcrumbs" format:@"It works!"];
     //    [NSException raise:@"da da da da dada dada" format:@"can't touch this"];
